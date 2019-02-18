@@ -1,0 +1,14 @@
+/**
+ * Default styles set-up and reset.
+ * Original file: assets/minimal-reset.css
+ */
+html { box-sizing: border-box; height: 100%; width: 100%; margin: 0; padding: 0; }
+*, ::after, ::before { box-sizing: inherit }
+body { position: absolute; min-height: 100%; width: 100%; margin: 0; padding: 0; }
+body > h1:first-child { margin-top: 0 }
+:focus { outline: dotted 1px grey }
+:hover { outline: none }
+img, embed, iframe, object, audio, video
+{ height: auto; max-width: 100% }
+iframe { border: none }
+table { border-collapse: collapse; border-spacing: 0 }

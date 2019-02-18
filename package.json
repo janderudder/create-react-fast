@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "concurrently": "latest",
+    "live-server": "latest",
+    "parcel": "latest"
+  },
+  "scripts": {
+    "start": "npx parcel serve ./src/index.html --open",
+    "watch": "npx parcel watch ./src/index.html",
+    "production": "npx parcel build ./src/index.html",
+    "serve-alt": "npx concurrently \"parcel watch ./src/index.html\" \"npx live-server ./dist --port=1234 --quiet\""
+  }
+}
