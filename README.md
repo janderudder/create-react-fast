@@ -4,7 +4,7 @@ This is a minimalist set of files to quickly bootstrap a React Web application d
 
 Typical components and features of such an environment are:
 
-- transpiler from modern JS to ES5
+- "transpiler" from modern JavaScript and JSX to EcmaScript 5
 - a project bundler
 - a web-server
 - file monitoring, re-bundling and refreshing when they change
@@ -74,7 +74,7 @@ npx concurrently "npm watch" "live-server" # or
 yarn concurrently "npm watch" "live-server"
 ```
 
-Note: `live-server` as some options. One worth mentioning is the `--no-browser` option, which prevents `live-server` from opening the page in a new tab in the default browser.
+Note: `live-server` knows several options. One worth mentioning is the `--no-browser` option, which prevents `live-server` from opening the page in a new tab in the default browser.
 
 
 # Production build
@@ -85,3 +85,12 @@ The `production` npm script is provided in order to let Parcel create a producti
 yarn production
 npm run production
 ```
+
+# Options
+
+## Browser auto open
+
+The default behavior in this project is to automatically open the application page in the default browser when the development environment starts and is ready to serve the app. This can be disabled by editing the npm scripts:
+
+- In the `start` script -serving with Parcel- remove the `--open` option.
+- In the `serve-alt` script -serving with Live-server- add the `--no-browser` option after `--quiet`.
