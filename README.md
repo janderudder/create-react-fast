@@ -1,6 +1,6 @@
 # React project boilerplate
 
-This is a minimalist set of files to quickly bootstrap a React Web application development environment. This repository exists only to provide a light and fast alternative to [create-react-app](https://github.com/facebook/create-react-app), with very little support for the production phase.
+This is a minimalist set of files to quickly bootstrap a React web application development environment. This repository exists only to provide a light and fast alternative to [create-react-app](https://github.com/facebook/create-react-app), with very little support for the production phase.
 
 Typical components and features of such an environment are:
 
@@ -10,8 +10,8 @@ Typical components and features of such an environment are:
 - file monitoring, re-bundling and refreshing when they change
 
 This repository uses [Parcel](https://parceljs.org)  as a bundler, which in turn uses [Babel](https://babeljs.io) to transpile the code.
-Parcel provides a Web-server with live-reloading to run the app and monitor the changes.
-As an alternate Web-server, [live-server](https://github.com/tapio/live-server) is also provided in this project.
+Parcel provides a web-server with live-reloading to run the app and monitor the changes.
+As an alternate web-server, [live-server](https://github.com/tapio/live-server) is also provided in this project.
 
 
 # Installation
